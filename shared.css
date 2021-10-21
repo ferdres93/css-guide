@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+
+.main-header {
+    width: 100%;
+    background: #282826;
+    padding: 8px 16px;
+} 
+
+.main-header > div {
+display: inline-block;
+vertical-align: middle;
+}
+
+.main-header_brand {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 74px);
+    vertical-align: middle;
+}
+
+.main-nav_items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main-nav_item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-nav_item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+   padding: 3px 0;
+}
+
+
+.main-nav_item a:hover,
+.main-nav_item a:active {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.main-nav_item--cta a {
+    color:white;
+    background: red;
+    padding: 8px 16px ;
+    border-radius: 8px;
+}
+
+.main-nav_item--cta a:hover,
+.main-nav_item--cta a:active {
+    color: red;
+    background: white;
+    border: none;
+}
+/*p::first-letter {
+    color: red;
+    font-size: 20px;
+}*/
+
+.main_footer {
+    background: grey;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.main_footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main_footer-link {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main_footer-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.main_footer a:hover,
+.main_footer a:active {
+    color: black ;
+}
