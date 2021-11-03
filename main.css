@@ -8,13 +8,15 @@ body {
 }
 
 #producto {
-    background:url("images/wallpaper.jpg") left top / cover no-repeat border-box;
+    background:linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent), url("images/wallpaper.jpg") left top / cover no-repeat border-box;
     /*background-image: url("wallpaper.jpg");
     background-size: cover;
     background-position: left top ;
     background-repeat: no-repeat;
     background-origin: border-box;
     background-clip: border-box;*/
+    /*background-image: linear-gradient(188deg, black, white,rgba (0,0,0,0.4));*/
+    /*background-image: radial-gradient(circle at left,red,blue);*/
     width: 100% ;
     height: 528px;
     padding: 10px;
@@ -162,6 +164,7 @@ body {
     border: 2px solid red;
     border-radius: 50%;
     margin: auto;
+    padding: 22px;
 }
 
 .caracteristicas_claves-descripcion {
