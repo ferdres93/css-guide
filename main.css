@@ -180,3 +180,52 @@ body {
     font-family: 'Rubik', sans-serif;
 }*/
 
+.modal {
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: black;
+    padding: 1rem;
+    /*border: 1px solid #ccc;*/
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.modal_titulo {
+    color: white;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.modal_actions {
+    text-align: center;
+}
+
+.modal_action {
+    border: 1px solid green;
+    background: green;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.modal_action:hover,
+.modal_action:active {
+    background: #24f140;
+    border-color: #24f140;
+}
+
+.modal_action-negative {
+    background: #940c12;
+    border-color: #940c12;
+}
+
+.modal_action-negative:hover,
+.modal_action-negative:active {
+    background: red;
+    border-color: red;
+}

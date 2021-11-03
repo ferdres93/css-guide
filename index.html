@@ -13,8 +13,20 @@
 
 <body>
     <div class="backdrop"></div>
+    <div class="modal">
+        <h1 class="modal_titulo">¿Quieres continuar?</h1>
+        <div class="modal_actions">
+            <a href="registro/index.html" class="modal_action">Sí</a>
+            <button class="modal_action modal_action-negative" type="button">No</button>
+        </div>
+    </div>
     <header class="main-header">
         <div>
+                <button class="toggle-button">
+                    <span class="toggle-button_bar"></span>
+                    <span class="toggle-button_bar"></span>
+                    <span class="toggle-button_bar"></span>
+                </button>
             <a href="index.html" class="main-header_brand"> 
             <img src="images/logo.png" alt="uHost - Juega a tu manera"> 
             </a>
@@ -34,6 +46,19 @@
         </nav>
 
     </header>
+    <nav class="mobile_nav">
+        <ul class="mobile_nav-items">
+            <li class="mobile_nav-item">
+                <a href="Nuevo/index.html">Nuevo</a>
+            </li>
+            <li class="mobile_nav-item">
+                <a href="Colecciones/index.html">Colecciones</a>
+            </li>
+            <li class="mobile_nav-item mobile_nav-item--cta">
+                <a href="registro/index.html">Registro</a>
+            </li>
+        </ul>
+    </nav>
     <main>
         <section id="producto">
             <h1>Descubre y juega</h1>
@@ -124,6 +149,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="shared.js"></script>
 </body>
 
 </html>
