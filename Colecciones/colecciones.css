@@ -1,7 +1,7 @@
 
 .coleccion {
-    font-size: 20px;
-    margin: 48px 0;
+    font-size: 1.2rem;
+    margin: 3rem 0;
 }
 
 .coleccion_list{
@@ -10,11 +10,12 @@
 }
 
 .coleccion:first-of-type {
-    margin-top: 96px;
+    margin-top: 6rem;
 }
 
 .coleccion_imagen-container {
     width: 65%;
+    max-width: 580px;
     display: inline-block;
     vertical-align: middle;
     box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
@@ -27,7 +28,7 @@
 
 .coleccion_info {
     text-align: right;
-    padding-top: 30px;
+    padding-top: 0.9rem;
     display: inline-block;
     vertical-align: middle;
     width: 30%;
@@ -50,21 +51,22 @@
 .colecciones_titulo {
     color: black;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2rem;
+    margin: 0;
 }
 
 .colecciones_subtitulo {
     margin: 0;
     color: red;
-    font-size: 15px;
+    font-size: 1.1rem;
 }
 
 .colecciones_info {
     color: black;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 
 .colecciones_info {
-    margin: 3px;
+    margin: 0.9rem 0;
 }
 

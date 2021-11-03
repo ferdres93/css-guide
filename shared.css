@@ -2,9 +2,24 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
+}
+
+.backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
 }
 
 .main-header {
@@ -13,7 +28,7 @@ body {
     top: 0;
     left: 0;
     background: #282826;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     z-index: 1;
 } 
 
@@ -26,7 +41,7 @@ vertical-align: middle;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     height: 20px;
     /*width: 20px;*/
     display: inline-block;
@@ -34,7 +49,7 @@ vertical-align: middle;
 
 .main-header_brand img {
     height: 100%;
-    margin-top: -5px;
+    margin-top: 0.313rem;
     /*width: 100%;*/
 }
 
@@ -52,14 +67,14 @@ vertical-align: middle;
 }
 .main-nav_item {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main-nav_item a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-   padding: 3px 0;
+   padding: 0.188rem 0;
 }
 
 
@@ -72,7 +87,7 @@ vertical-align: middle;
 .main-nav_item--cta a {
     color:white;
     background: red;
-    padding: 8px 16px ;
+    padding: 0.5rem 1rem ;
     border-radius: 8px;
 }
 
@@ -89,8 +104,8 @@ vertical-align: middle;
 
 .main_footer {
     background: grey;
-    padding: 32px;
-    margin-top: 48px;
+    padding: 2rem;
+    margin-top: 3rem;
 }
 
 .main_footer-links {
@@ -102,7 +117,7 @@ vertical-align: middle;
 
 .main_footer-link {
     display: inline-block;
-    margin: 0 16px;
+    margin: 0 1rem;
 }
 
 .main_footer-link a {
