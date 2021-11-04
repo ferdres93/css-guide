@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" href="../images/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../shared.css">
@@ -16,6 +17,11 @@
     <div class="background"></div>
     <header class="main-header">
         <div>
+            <button class="toggle-button">
+                <span class="toggle-button_bar"></span>
+                <span class="toggle-button_bar"></span>
+                <span class="toggle-button_bar"></span>
+            </button>
             <a href="../index.html" class="main-header_brand"> 
             <img src="../images/logo.png" alt="uHost - Juega a tu manera"> 
             </a>
@@ -35,6 +41,19 @@
         </nav>
 
     </header>
+    <nav class="mobile_nav">
+        <ul class="mobile_nav-items">
+            <li class="mobile_nav-item">
+                <a href="index.html">Nuevo</a>
+            </li>
+            <li class="mobile_nav-item">
+                <a href="../Colecciones/index.html">Colecciones</a>
+            </li>
+            <li class="mobile_nav-item mobile_nav-item--cta">
+                <a href="../registro/index.html">Registro</a>
+            </li>
+        </ul>
+    </nav>
     <main>
         <section class="nuevo" id="xbox">
             <a href="#">
@@ -72,6 +91,7 @@
             </ul>
         </nav>
     </footer>
+    <script src="../shared.js"></script>
 </body>
 
 </html>
