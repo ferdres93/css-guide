@@ -129,9 +129,9 @@ vertical-align: middle;
 }*/
 
 .main_footer {
-    background: grey;
+    background: #282826;
     padding: 2rem;
-    margin-top: 3rem;
+    margin-top: 0;
 }
 
 .main_footer-links {

@@ -8,7 +8,7 @@ body {
 }
 
 #producto {
-    background:linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent), url("images/wallpaper.jpg") left top / cover no-repeat border-box;
+    background:/*linear-gradient(to top, rgba(80,68,18,0.6) 10%, transparent),*/ url("images/wallpaper.jpg") left top / cover no-repeat border-box;
     /*background-image: url("wallpaper.jpg");
     background-size: cover;
     background-position: left top ;
@@ -17,8 +17,9 @@ body {
     background-clip: border-box;*/
     /*background-image: linear-gradient(188deg, black, white,rgba (0,0,0,0.4));*/
     /*background-image: radial-gradient(circle at left,red,blue);*/
-    width: 100vw ;
-    height: 40vh;
+    background-position: center;
+    width: 100% ;
+    height: 100vh;
     padding: 10px;
     margin-top: 40px;
     /*border: dashed red;*/
@@ -28,8 +29,11 @@ body {
 
 
 .titulo-seccion {
-    color: #282826;
+    color: #ffffff;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 0;
+    padding-top: 15px;
 }
 
 
@@ -39,23 +43,31 @@ body {
     position:absolute;
     top: 3%;
     left: 5%;
-    width: 100%;
 }
 
 #consolas {
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
+
+.cards {
+    background-image: url(images/foto2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 
 .plataforma {
     background: grey;
-    text-align: center;
-    padding: 1rem;
-    margin: 0.5rem;
     display: inline-block;
-    width: 30%;
-    vertical-align: middle;
+    width: 90%;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 1rem;
+    
 }
 
 .plataforma--ordenador {
@@ -65,41 +77,81 @@ body {
     border-radius: 8px;
 }
 
-.plataforma_ordenador{
+.plataforma--ordenador {
+    background: black
+}
+
+.plataforma--ordenador:hover,
+.plataforma--ordenador:active {
+    background: #7822daaf;
+    color: white;
+    border: none;
+}
+
+/*.plataforma_ordenador{
     background: black;
     color: white;
     padding: 0.5rem;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-}
+}*/
 
 .plataforma--xbox {
-    background: #0a940a;
+    background: black;
     color: white;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
-    
+}
+
+.plataforma--xbox:hover,
+.plataforma--xbox:active {
+    background: #0a940aad;
+    color: white;
+    border: none;
 }
 
 .plataforma--psn {
-    background: #0938d1;
+    background: black;
     color: white;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
 }
 
-.plataforma_title {
-    background: black;
+.plataforma--psn:hover,
+.plataforma--psn:active {
+    background: #0938d1a8;
     color: white;
+    border: none;
+}
+.plataforma_title {
+    /*background: black;*/
+    /*color: white;*/
     padding: 0.5rem;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 8px;
+    /*box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 } 
+ 
+.psn {
+    color: #4f77fa;
+}
+
+
+
+.xbox {
+    color: #22e922;
+}
+
+
+.ordenador {
+    color: #c28cff ;
+}
 
 .plataforma_promo {
     color:#ffd900;
     font-size: 130%;
 }
+
 
 .plataforma_caracteristicas {
     list-style: none;
@@ -134,10 +186,93 @@ body {
     outline: none;
 }
 
+.mostrar {
+    display: none;
+}
+
+/*--media quires--*/
+
+@media screen and (min-width: 50rem){
+    .cards-container {
+        max-width: 100rem;
+        margin: 0;
+        text-align: center;
+}    
+    .plataforma {
+        width: 25%;
+        height: 21rem;
+    }
+
+    .plataforma h1{
+        font-size: 1.2rem;
+    }
+
+    .plataforma h2{
+        font-size: 1rem;
+    }
+
+    .plataforma h3{
+        font-size: 0.9rem;
+    }
+
+    .plataforma li{
+        font-size: 0.8rem;
+    }
+
+    .cards {
+        background-image:url(images/foto1.jpg) ;
+    }
+
+    .button {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (min-width: 80rem){
+
+    .mostrar{
+        display: inline-block;
+    }
+    .cards-container {
+        max-width: 100rem;
+        margin: 0;
+        text-align: center;
+}    
+    .plataforma {
+        width: 12%;
+        height: 18rem;
+    }
+
+    .plataforma h1{
+        font-size: 1rem;
+    }
+
+    .plataforma h2{
+        font-size: 0.9rem;
+    }
+
+    .plataforma h3{
+        font-size: 0.7rem;
+    }
+
+    .plataforma li{
+        font-size: 0.6rem;
+    }
+
+    .cards {
+        background-image:url(images/foto3.jpg) ;
+    }
+
+    .button {
+        font-size: 0.7rem;
+    }
+
+}
 
 #caracteristicas_clave {
-    background:#282826 ;
-    margin-top: 5rem;
+    background:black;
+    margin-top: 0;
     padding: 1rem;
 }
 
@@ -160,7 +295,7 @@ body {
 }
 
 .caracteristicas_claves-imagen {
-    background: grey;
+    background: black;
     width: 128px;
     height: 128px;
     border: 2px solid red;
@@ -229,3 +364,7 @@ body {
     background: red;
     border-color: red;
 }
+
+#Isolation_Mode {
+    fill: white;
+} 

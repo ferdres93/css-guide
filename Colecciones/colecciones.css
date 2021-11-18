@@ -1,7 +1,12 @@
+body {
+    background-color: black;
+}
 
 .coleccion {
     font-size: 1.2rem;
     margin: 3rem 0;
+    padding: 3rem;
+    text-align: center;
 }
 
 .coleccion_list{
@@ -24,6 +29,7 @@
 .coleccion_imagen {
     width: 100%;
     vertical-align: top;
+
 }
 
 .coleccion_info {
@@ -32,24 +38,48 @@
     display: inline-block;
     vertical-align: middle;
     width: 30%;
+    text-align: justify;
+    text-justify: distribute;
+    text-align-last: left;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+
 }
 
 #juego-2.coleccion {
-    text-align: right;
+    text-align: center;
+
 }
 
-#juego-2 .coleccion_info {
-    text-align: left;
+#juego-2 .colecciones_info {
+    text-align: justify;
+    text-justify: distribute;
+    text-align-last: left;
+
+
 }
 
 #juego-2 .coleccion_imagen {
     box-shadow: -3px 3px 3px rgba(0,0,0,0.4);
 }
 
+#juego-1:hover,
+#juego-1:active {
+    background-color: rgba(218, 207, 228, 0.123);
+}
 
+#juego-2:hover,
+#juego-2:active {
+    background-color: rgba(218, 207, 228, 0.123);
+}
+
+#juego-3:hover,
+#juego-3:active {
+    background-color: rgba(218, 207, 228, 0.123);
+}
 
 .colecciones_titulo {
-    color: black;
+    color: white;
     font-weight: bold;
     font-size: 2rem;
     margin: 0;
@@ -62,7 +92,7 @@
 }
 
 .colecciones_info {
-    color: black;
+    color: white;
     font-size: 0.9rem;
 }
 
