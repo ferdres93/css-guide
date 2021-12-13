@@ -45,29 +45,48 @@ body {
     left: 5%;
 }
 
-#consolas {
+/*#consolas {
     width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
-}
+}*/
+
+/*.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}*/
+
+
 
 .cards {
     background-image: url(images/foto2.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
+li {
+    text-align: center;
+}
 
 .plataforma {
     background: grey;
-    display: inline-block;
-    width: 90%;
+    /*display: inline-block;*/
+    width: 22rem;
     padding: 1rem;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     margin: 1rem;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
 }
 
 .plataforma--ordenador {
@@ -163,16 +182,22 @@ body {
     margin: 0.5rem 0;
 }
 
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
 .button {
     background: white;
     color: black;
     font: inherit;
     font-weight: bold;
-    border: 1.5px solid white;
+    /*border: 1.5px solid white;*/
     padding: 0.5rem;
     margin-top: 5%;
     border-radius: 8px; 
     cursor: pointer;
+    margin: 2rem
 }
 
 .button:hover,
@@ -193,14 +218,29 @@ body {
 /*--media quires--*/
 
 @media screen and (min-width: 50rem){
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .cards-container {
         max-width: 100rem;
         margin: 0;
         text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+
 }    
     .plataforma {
-        width: 25%;
-        height: 21rem;
+        /*display: flex;
+        align-items: center; 
+        justify-content: center;
+        width: 90%;*/
+        max-width: 13rem; 
+        margin: 1.5rem;
+        padding: 1.5rem;
+        flex-basis: 100%
     }
 
     .plataforma h1{
@@ -232,16 +272,20 @@ body {
 @media screen and (min-width: 80rem){
 
     .mostrar{
-        display: inline-block;
+        display: flex;
     }
+
     .cards-container {
-        max-width: 100rem;
+        max-width: 200rem;
         margin: 0;
         text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
 }    
     .plataforma {
-        width: 12%;
-        height: 18rem;
+        width: 11%;
+        padding: 1.5rem;
+        margin: 1rem;
     }
 
     .plataforma h1{
